@@ -1,0 +1,11 @@
+version: '2'
+services:
+  mfnncs-postgresql:
+    image: postgres:11.2
+    # volumes:
+    #     - ~/volumes/jhipster/mFnncs/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=mFnncs
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
